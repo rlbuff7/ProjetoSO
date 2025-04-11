@@ -5,8 +5,8 @@
 #define NUM_THREADS 5
 #define INCREMENTOS 100000
 
-int contador = 0;                   // Variável global compartilhada
-pthread_mutex_t mutex;             // Mutex para proteção da seção crítica
+int contador = 0;                   
+pthread_mutex_t mutex;             
 
 // Função executada por cada thread
 void* incremento(void* arg){
